@@ -11,11 +11,17 @@ public class Cannon : MonoBehaviour
 
     private int currentShots = 0;
 
-    public AudioSource fireSound; // Current number of shots fired
-
+    public AudioClip fireSound; // Current number of shots fired
+    private AudioSource fireSource;
     public CameraShake cameraShake;
     void Start()
     {
+        fireSource= GetComponent<AudioSource>();
+        if(fireSource == null)
+        {
+            fireSource = gameObject.AddComponent<AudioSource>();
+        }
+        fireSource.clip = fireSound;    
         // Ensure firePoint is correctly oriented at 60 degrees if it's a child of the cannon
         if (firePoint != null)
         {
@@ -35,12 +41,18 @@ public class Cannon : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && currentShots < maxShots)
         {
+            
             Fire();
         }
     }
 
     void Fire()
     {
+
+        
+            fireSource.Play();
+        
+
         if (firePoint == null)
         {
             Debug.LogError("Fire point not assigned.");

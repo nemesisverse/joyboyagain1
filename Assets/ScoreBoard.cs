@@ -10,7 +10,7 @@ public class ScoreBoard : MonoBehaviour
     void Start()
     {
         scoretext = GetComponent<TMP_Text>();
-        scoretext.text = "start";
+        scoretext.text = "0";
     }
 
     // Update is called once per frame
