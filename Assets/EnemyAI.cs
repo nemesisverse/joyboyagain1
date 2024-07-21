@@ -50,17 +50,20 @@ public class EnemyAI : MonoBehaviour
 
     private void chasetarget()
     {
+        GetComponent<Animator>().SetBool("attack",false);
+        GetComponent<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
     }
 
     private void AttackTarget()
     {
+        GetComponent<Animator>().SetBool("attack", true);
         Debug.Log("is attacking");
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(transform.position , chaserange);
     }
 
