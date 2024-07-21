@@ -18,6 +18,14 @@ public class Cannon : MonoBehaviour
         {
             firePoint.localEulerAngles = new Vector3(-53, 0, 0); // Adjust the angle
         }
+
+        // Ensure fire effect does not loop
+        var fireEffectParticleSystem = fireEffectPrefab.GetComponent<ParticleSystem>();
+        if (fireEffectParticleSystem != null)
+        {
+            var mainModule = fireEffectParticleSystem.main;
+            mainModule.loop = false;
+        }
     }
 
     void Update()
@@ -47,10 +55,11 @@ public class Cannon : MonoBehaviour
         }
 
         // Instantiate the firing effect
-        Instantiate(fireEffectPrefab, firePoint.position, firePoint.rotation);
+        GameObject particle = Instantiate(fireEffectPrefab, firePoint.position, firePoint.rotation);
 
         // Destroy the sphere after the specified delay
-        Destroy(sphere, 2.2f);
+        Destroy(sphere, 2.3f);
+        Destroy(particle,0.2f);
 
         // Increment the shot counter
         currentShots++;
