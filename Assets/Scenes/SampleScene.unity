@@ -13860,7 +13860,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 5000
-  field of view: 40
+  field of view: 16
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -18307,6 +18307,19 @@ MonoBehaviour:
   speed: 8
   isGrounded: 0
   verticalVel: 0
+--- !u!114 &450187102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450187098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97417fa45b81b694fa4a3e6956890392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoints: 100
 --- !u!1 &451912759
 GameObject:
   m_ObjectHideFlags: 0
@@ -33730,7 +33743,7 @@ Transform:
   m_GameObject: {fileID: 818284032}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.084, y: 0.5, z: 34.69}
+  m_LocalPosition: {x: 8.084, y: 0.5, z: 39.89}
   m_LocalScale: {x: 0.5413114, y: 0.5413114, z: 0.5413114}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46919,6 +46932,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 450187101}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6cb95e0472f7383438fb5e5909d45bd5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 450187102}
   m_SourcePrefab: {fileID: 100100000, guid: 6cb95e0472f7383438fb5e5909d45bd5, type: 3}
 --- !u!1001 &1160737106
 PrefabInstance:
@@ -77959,7 +77976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e87985f3d5ac24391a292ec849a55f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
+  damage: 20
 --- !u!136 &1893833258
 CapsuleCollider:
   m_ObjectHideFlags: 0
