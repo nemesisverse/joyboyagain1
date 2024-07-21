@@ -9,14 +9,17 @@ public class Cannon : MonoBehaviour
     public int maxShots = 5;            // Maximum number of shots the player can fire
     public float destroyDelay = 3f;     // Time after which the sphere will be destroyed
 
-    private int currentShots = 0;       // Current number of shots fired
+    private int currentShots = 0;
 
+    public AudioSource fireSound; // Current number of shots fired
+
+    public CameraShake cameraShake;
     void Start()
     {
         // Ensure firePoint is correctly oriented at 60 degrees if it's a child of the cannon
         if (firePoint != null)
         {
-            firePoint.localEulerAngles = new Vector3(-53, 0, 0); // Adjust the angle
+            firePoint.localEulerAngles = new Vector3(-35, 0, 0); // Adjust the angle
         }
 
         // Ensure fire effect does not loop
