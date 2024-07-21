@@ -56,9 +56,9 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        PlayerMovement();
         LookMouse();
+        PlayerMovement();
+       
         isGrounded = controller.isGrounded;
         if (isGrounded)
         {
@@ -70,7 +70,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
         moveVector = new Vector3(0, verticalVel * .2f * Time.deltaTime, 0);
         controller.Move(moveVector);
-
+       
 
 
     }
