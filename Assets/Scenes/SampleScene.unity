@@ -91252,6 +91252,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1467887793191151850, guid: edf862bf48393a247a0f363ef426bb91,
+        type: 3}
+      propertyPath: maxShots
+      value: 147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3026326011706211235, guid: edf862bf48393a247a0f363ef426bb91,
         type: 3}
       propertyPath: cam
