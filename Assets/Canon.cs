@@ -25,7 +25,7 @@ public class Cannon : MonoBehaviour
         // Ensure firePoint is correctly oriented at 60 degrees if it's a child of the cannon
         if (firePoint != null)
         {
-            firePoint.localEulerAngles = new Vector3(-35, 0, 0); // Adjust the angle
+            firePoint.localEulerAngles = new Vector3(-26, 0, 0); // Adjust the angle
         }
 
         // Ensure fire effect does not loop

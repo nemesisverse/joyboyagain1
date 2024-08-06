@@ -10361,7 +10361,7 @@ Transform:
   m_GameObject: {fileID: 233561433}
   serializedVersion: 2
   m_LocalRotation: {x: 0.15813829, y: 0.706023, z: -0.16666943, w: 0.6698845}
-  m_LocalPosition: {x: -0.00000047683716, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17062,7 +17062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &389739632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51059,7 +51059,7 @@ Transform:
   m_GameObject: {fileID: 1185946819}
   serializedVersion: 2
   m_LocalRotation: {x: 0.14592724, y: 0.70893776, z: -0.15379962, w: 0.6726501}
-  m_LocalPosition: {x: -0.00000047683716, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -91850,6 +91850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: maxShots
       value: 547483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467887793191151850, guid: edf862bf48393a247a0f363ef426bb91,
+        type: 3}
+      propertyPath: fireForce
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1467887793191151850, guid: edf862bf48393a247a0f363ef426bb91,
         type: 3}
